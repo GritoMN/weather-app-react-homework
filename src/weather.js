@@ -43,13 +43,18 @@ export default function Weather() {
       />
       <form onSubmit={handleSubmit}>
         <input type="Search" placeholder="Which city" onChange={updateCity} />
-        <input type="Submit" value="Search" />
       </form>
       <ul>
         <li>Temperature: {Math.round(temperature)} °C</li>
         <li>Description: {description} </li>
         <li>Humidity: {humidity} %</li>
         <li>Wind: {wind} km/h</li> <img src={icon} alt="Wind" />
+        <p class="code">
+          <a href="http://https://github.com/GritoMN/weather-app-react-homework">
+            Open-source code
+          </a>
+          ,by GritoMN
+        </p>
       </ul>
     </div>
   );
